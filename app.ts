@@ -1,13 +1,7 @@
-type input = string | number;
+// Definir os parâmetros e o tipo da saída:
+function somarValoresNumericos(num1: number, num2: number): number {
+  //return num1 + num2.toString();  *Aqui o ts vai sinalizar que a tipagem esta errada!
+  return num1 + num2
+}
 
-function somarValores(input1: input, input2: input) {
-  if(typeof input1 === "string" || typeof input2 === 'string') {
-    return input1.toString() + input2.toString();
-  } else {
-    return input1 + input2;
-  } 
-} 
-
-console.log(somarValores(1, 5));
-console.log(somarValores('1', '5'));
-console.log(somarValores('O número é: ', 5));
+console.log(somarValoresNumericos(1, 3));
