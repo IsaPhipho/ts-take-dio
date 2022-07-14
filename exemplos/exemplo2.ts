@@ -16,7 +16,7 @@ let frase = 'O valor é: '
 if (button) {
   button.addEventListener('click', () => {
     if (input1 && input2) {
-      console.log(adicionarNumeros(Number(input1.value), Number(input2.value), devPrintar, frase));
+      console.log(adicionarNumeros(Number(input1.value), Number(input2.value), devPrintar, frase))
     }
   })
 }
